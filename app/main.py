@@ -1,4 +1,11 @@
-from notion.client import NotionClient
+import os
+from notion_client import Client
+from dotenv import load_dotenv
+
+load_dotenv()
+
+notion = Client(auth=os.getenv("NOTION_TOKEN"))
+db_id = os.getenv("NOTION_DB_ID")
 
 
 def main():
