@@ -37,7 +37,7 @@ def create_item(name, completed=False, order=0):
 def load_items():
     '''Load items from a file'''
     items = []
-    with open('items.txt', 'r') as f:
+    with open('data/items.txt', 'r') as f:
         for line in f:
             items.append(line.strip())
     return items
