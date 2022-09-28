@@ -1,6 +1,7 @@
 # Local dev stuff
 # Dockerfile
 .vscode
+items.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
